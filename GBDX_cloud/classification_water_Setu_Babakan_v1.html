@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b4f8605681a6446792dad37d97298eef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b4f8605681a6446792dad37d97298eef" ></div>
+        
+</body>
+<script>    
+    
+            var map_b4f8605681a6446792dad37d97298eef = L.map(
+                "map_b4f8605681a6446792dad37d97298eef",
+                {
+                    center: [-6.3436632368193235, 106.82199954986574],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    name: "cartocdn",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_60bb7040118b40b1a899974e990aaede = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",
+                {"attribution": "CartoDB", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b4f8605681a6446792dad37d97298eef);
+        
+    
+            var choropleth_372594204e6447daab49e034452c316f = L.featureGroup(
+                {}
+            ).addTo(map_b4f8605681a6446792dad37d97298eef);
+        
+    
+        function geo_json_b44877ba6a774143aacf88618c801df6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "blue", "fillOpacity": 0.6, "opacity": 1, "weight": 1};
+            }
+        }
+        function geo_json_b44877ba6a774143aacf88618c801df6_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_b4f8605681a6446792dad37d97298eef.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_b44877ba6a774143aacf88618c801df6 = L.geoJson(null, {
+                onEachFeature: geo_json_b44877ba6a774143aacf88618c801df6_onEachFeature,
+            
+                style: geo_json_b44877ba6a774143aacf88618c801df6_styler,
+        }).addTo(choropleth_372594204e6447daab49e034452c316f);
+            geo_json_b44877ba6a774143aacf88618c801df6.addData({"features": [{"geometry": {"coordinates": [[[702020.7939441574, 9297708.982048025], [700922.9379441574, 9297829.060048025], [700922.9379441574, 9297880.522048026], [700924.8439441574, 9297886.240048025], [700955.3399441574, 9297937.702048026], [701469.9599441574, 9298639.110048026], [701477.5839441573, 9298648.640048025], [701485.2079441574, 9298656.264048025], [701944.5539441574, 9298984.096048025], [701976.9559441574, 9298997.438048026], [702020.7939441574, 9299014.592048025], [702030.3239441575, 9299014.592048025], [702034.1359441574, 9299006.968048025], [702047.4779441574, 9298976.472048026], [702066.5379441574, 9298911.668048026], [702070.3499441574, 9298886.890048025], [702163.7439441574, 9298053.968048025], [702163.7439441574, 9297789.034048026], [702020.7939441574, 9297708.982048025]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+        
+    
+            var layer_control_77292b3cb29c43cdbd13d4cdb5c21b47 = {
+                base_layers : {
+                    "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" : tile_layer_60bb7040118b40b1a899974e990aaede,
+                },
+                overlays :  {
+                    "Official green space " : choropleth_372594204e6447daab49e034452c316f,
+                },
+            };
+            L.control.layers(
+                layer_control_77292b3cb29c43cdbd13d4cdb5c21b47.base_layers,
+                layer_control_77292b3cb29c43cdbd13d4cdb5c21b47.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b4f8605681a6446792dad37d97298eef);
+        
+</script>
