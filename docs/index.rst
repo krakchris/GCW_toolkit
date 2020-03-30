@@ -35,6 +35,7 @@ Contents of the documentation
 
 .. toctree::
    :maxdepth: 3
+
    license
    help
 
