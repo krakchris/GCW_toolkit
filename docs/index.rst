@@ -1,15 +1,8 @@
-
-
+=======================================
 Welcome to GCW_toolkit's documentation!
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=======================================
 
 .. sectnum::
-
-.. toctree::
-   :maxdepth: 3
-
-   license
-   help
 
 .. contents:: Content of this page
 
@@ -28,18 +21,23 @@ Whitin the water areas 3 variables are measured:
 3. Overlap between the water area with the local cadastral map (if available).
 
 
-Another header
-^^^^^^^^^^^^^^
+Water delineation
+^^^^^^^^^^^^^^^^^
 
 Here is some stuff for documentation::
 
     print('hello')
     >> hello
 
+
 Contents of the documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. toctree::
+   :maxdepth: 3
 
+   license
+   help
 
 
 
