@@ -3,12 +3,15 @@
 Welcome to GCW_toolkit's documentation!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. sectnum::
 
 .. toctree::
    :maxdepth: 3
 
    license
    help
+
+.. contents:: Content of this page
 
 
 What is GCW Toolkit? 
@@ -28,13 +31,14 @@ Whitin the water areas 3 variables are measured:
 Another header
 ^^^^^^^^^^^^^^
 
-Here is some stuff for documentation.::
+Here is some stuff for documentation::
 
     print('hello')
     >> hello
 
 Contents of the documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 
 
