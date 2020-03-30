@@ -3,9 +3,12 @@
 Welcome to GCW_toolkit's documentation!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. sectnum::
 
-.. contents:: Content of this page
+.. toctree::
+   :maxdepth: 3
+
+   license
+   help
 
 
 What is GCW Toolkit? 
@@ -33,11 +36,6 @@ Here is some stuff for documentation.::
 Contents of the documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. toctree::
-   :maxdepth: 3
-
-   license
-   help
 
 
 
