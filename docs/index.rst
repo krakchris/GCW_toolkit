@@ -24,7 +24,7 @@ Whitin the water areas 3 variables are measured:
 Water delineation
 ^^^^^^^^^^^^^^^^^
 
-Water delineation is done as a start. The govt. of Indonesia has specified that water delineation needs to be accurate with 90% of the lines within a 4.5 meter radius of the actual location. This means that precision and recall both need to be >90%. We have developed a workflow that is capable of delivering this accuracy. :
+Water delineation is done as a start. The govt. of Indonesia has specified that water delineation needs to be accurate with 90% of the lines within a 4.5 meter radius of the actual location. This means that precision and recall both need to be >90%. We have developed a workflow that is capable of delivering this accuracy. ::
 
     print('hello')
     >> hello
