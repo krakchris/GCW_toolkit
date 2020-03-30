@@ -30,7 +30,7 @@ Water delineation is done as a start. The govt. of Indonesia has specified that 
     >> hello
 
 
-That was some code that was there 
+That was some code that was there
 
 Contents of the documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -38,6 +38,10 @@ Contents of the documentation
 .. toctree::
    :maxdepth: 3
 
+   Water Delineation
+   Changes in Greenspace
+   Sedimentation load
+   Cadastral overlap
    license
    help
 
