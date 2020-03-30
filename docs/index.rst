@@ -2,8 +2,6 @@
 Welcome to GCW_toolkit's documentation!
 =======================================
 
-.. sectnum::
-
 .. contents:: Content of this page
 
 
